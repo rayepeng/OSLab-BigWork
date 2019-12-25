@@ -37,7 +37,6 @@ typedef struct s_proc {
         int ticks;                 /* 本轮 ticks 数*/
 		int remain;                /*remained ticks*/
         int priority;           
-		int level;             /*反馈队列级数*/
 
 	u32 pid;                   /* process id passed in from MM */
 	char p_name[16];           /* name of the process */

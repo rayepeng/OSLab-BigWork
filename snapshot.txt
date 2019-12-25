@@ -16,10 +16,10 @@ RAM size:01FF0000h
 -----"cstart" begins-----
 -----"cstart" finished-----
 -----"kernel_main" begins-----
-A.SÿA.A.ÿB.B.C.C.ğSÿD.D.SÿE.E.SÿA.A.A.ÿB.B.B.C.C.C.ğSÿD.D.D.SÿE.SÿA.A.A.A.ÿB.B.B
-.B.C.C.C.SÿA.A.A.A.ÿB.B.B.SÿA.A.
-ÿA.SÿA.A.ÿB.B.C.C.ğSÿD.D.SÿE.E.SÿA.A.A.ÿB.B.B.C.C.C.ğSÿD.D.D.SÿE.SÿA.A.A.A.ÿB.B.
-B.B.C.C.C.SÿA.A.A.A.ÿB.B.B.SÿA.A.
-ÿA.SÿA.A.ÿB.B.C.C.ğSÿD.D.SÿE.E.SÿA.A.A.ÿB.B.B.C.C.C.ğSÿD.D.D.SÿE.SÿA.A.A.A.ÿB.B.
-B.B.C.C.C.SÿA.A.A.A.ÿB.B.B.SÿA.A.
-ÿA.SÿA.A.ÿB.B.C.C.ğSÿD.D.SÿE.E.SÿA.A.A.ÿB.B.B.C.C.C.ğSÿD.D.D.SÿE.SÿA.A.A.A.ÿB.B.
+A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.
+A.A.A.A.A.A.A.A.A.A.C.C.C.C.C.C.C.C.C.C.C.C.C.C.C.C.C.C.C.C.C.C.C.C.C.C.C.C.C.C.
+C.C.C.C.C.C.C.C.C.C.C.C.C.C.C.C.C.C.C.C.D.D.D.D.D.D.D.D.D.D.D.D.D.D.D.D.D.D.D.D.
+D.D.D.D.D.D.D.D.D.D.B.B.B.B.B.B.B.B.B.B.B.B.B.B.B.B.B.B.B.B.E.E.E.E.E.E.E.E.E.E.
+A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.
+A.A.A.A.A.A.A.A.A.A.C.C.C.C.C.C.C.C.C.C.C.C.C.C.C.C.C.C.C.C.C.C.C.C.C.C.C.C.C.C.
+C.C.C.C.C.C.C.C.C.C.C.C.C.C.C.C.C.C.C.C.D.D.D.D.D.D.D.D.D.D.D.D.D.D.D.D.D.D.D.D.
