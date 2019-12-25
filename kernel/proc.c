@@ -55,74 +55,13 @@ PUBLIC void schedule()
 				p_proc_ready->remain--; // 进程每调度一次时间片减少1
 			}
 		}
-
-		//但是有个问题，其他的进程就不会运行了，所以需要判断是否结束
-		//这样能够保证总是调度优先级高的代码，然后如果优先级高的运行结束就调度下一个优先级的
-		//如果都结束了，那么greatest_priority就为0
 		if(!greatest_priority){
 			for (p = proc_table; p < proc_table+NR_TASKS; p++) {
 				p->ticks = p->priority; //进入到下一级队列，同样只做一次
 			}
-			//如何判断所有进程运行结束？
 		}
 	}
 }
-// PUBLIC void schedule()
-// {
-// 	PROCESS* p;
-// 	int	 greatest_ticks = 0;
-// 	int  greatest_level = 100;
-// 	int  count = 0;
-// 	int  save = 0;
-	
-// 	while (!greatest_ticks) {
-// 		for (p = proc_table; p < proc_table+NR_TASKS; p++) {
-// 			if (p->level < greatest_level && p->remain > 0) {
-// 				greatest_ticks = p->remain;
-// 				greatest_level = p->level;
-// 				save = count;
-// 			}
-// 			count++;
-// 		}
-// 		if (!greatest_ticks) {
-// 			for (p = proc_table; p < proc_table+NR_TASKS; p++) {
-// 				p->remain = p->priority;
-// 				p->ticks = 1;
-// 				p->level = 1;
-// 			}
-// 			disp_str("\n");
-// 			continue;
-// 		}
-// 		count = 0;
-// 		disp_str(save);
-// 		for (p = proc_table; p < proc_table+NR_TASKS; p++) {
-// 			if(save == count){
-// 				if(p->level == 1){
-// 					p->ticks = 2;
-// 					p->remain -= 2;
-// 				}
-// 				else if(p->level == 2){
-// 					p->ticks = 3;
-// 					p->remain -= 3;
-// 				}
-// 				else if(p->level > 2){
-// 					p->ticks = 4;
-// 					p->remain -= 4;
-// 				}
-// 				if(p->remain < 0){
-// 					p->ticks += p->remain;
-// 					p->remain = 0;
-// 				}
-// 				p->level += 1;
-// 				p_proc_ready = p;
-// 				break;
-// 			}
-// 			count++;
-// 		}
-// 		count = 0;
-// 		save = 0;
-// 	}
-// }
 
 /*======================================================================*
                            sys_get_ticks

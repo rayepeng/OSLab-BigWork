@@ -67,12 +67,6 @@ PUBLIC int kernel_main()
 	proc_table[3].ticks = proc_table[3].priority = 30; //d
 	proc_table[4].ticks = proc_table[4].priority = 10; //e
 	
-	// proc_table[0].level = 1;
-	// proc_table[1].level = 1;
-	// proc_table[2].level = 1;
-	// proc_table[3].level = 1;
-	// proc_table[4].level = 1;
-	
 	proc_table[0].remain= 0;
 	proc_table[1].remain= 0;
 	proc_table[2].remain= 0;

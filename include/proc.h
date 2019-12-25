@@ -35,7 +35,7 @@ typedef struct s_proc {
 	DESCRIPTOR ldts[LDT_SIZE]; /* local descriptors for code and data */
 
         int ticks;                 /* 本轮 ticks 数*/
-		int remain;                /*remained ticks*/
+		int remain;                /*进程在队列中剩余的时间片*/
         int priority;           
 
 	u32 pid;                   /* process id passed in from MM */
