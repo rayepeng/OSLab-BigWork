@@ -97,8 +97,16 @@ PUBLIC int kernel_main()
 void TestA()
 {
 	int i = 0;
+	int crc = 0;
 	while (1) {
 		disp_str("A.");
+		if(ticks%100==0)
+		{
+			crc=get_crc();
+			disp_str(" CRC is ");
+			disp_int(crc);
+			disp_str(" ");
+		}			
 		milli_delay(10);
 	}
 }

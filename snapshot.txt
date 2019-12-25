@@ -16,10 +16,10 @@ RAM size:01FF0000h
 -----"cstart" begins-----
 -----"cstart" finished-----
 -----"kernel_main" begins-----
-A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.
-A.A.A.A.A.A.A.A.A.A.C.C.C.C.C.C.C.C.C.C.C.C.C.C.C.C.C.C.C.C.C.C.C.C.C.C.C.C.C.C.
-C.C.C.C.C.C.C.C.C.C.C.C.C.C.C.C.C.C.C.C.D.D.D.D.D.D.D.D.D.D.D.D.D.D.D.D.D.D.D.D.
-D.D.D.D.D.D.D.D.D.D.B.B.B.B.B.B.B.B.B.B.B.B.B.B.B.B.B.B.B.B.E.E.E.E.E.E.E.E.E.E.
-A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.
-A.A.A.A.A.A.A.A.A.A.C.C.C.C.C.C.C.C.C.C.C.C.C.C.C.C.C.C.C.C.C.C.C.C.C.C.C.C.C.C.
-C.C.C.C.C.C.C.C.C.C.C.C.C.C.C.C.C.C.C.C.D.D.D.D.D.D.D.D.D.D.D.D.D.D.D.D.D.D.D.D.
+A. CRC is 0x0 A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.
+A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.C.C.C.C.C.C.C.C.C.C.C.C.C.C.C.C.C.C.C.C.C.C.C.C.
+C.C.C.C.C.C.C.C.C.C.C.C.C.C.C.C.C.C.C.C.C.C.C.C.C.C.D.D.D.D.D.D.D.D.D.D.D.D.D.D.
+D.D.D.D.D.D.D.D.D.D.D.D.D.D.D.D.B.B.B.B.B.B.B.B.B.B.B.B.B.B.B.B.B.B.B.B.E.E.E.E.
+E.E.E.E.E.E.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.
+A.A.A.A.A.A.A. CRC is 0x0 A.A.A.A.A.A.A.A.A.C.C.C.C.C.C.C.C.C.C.C.C.C.C.C.C.C.C.
+C.C.C.C.C.C.C.C.C.C.C.C.C.C.C.C.C.C.C.C.C.C.C.C.C.C.C.C.C.C.C.C.D.D.D.D.D.D.D.D.

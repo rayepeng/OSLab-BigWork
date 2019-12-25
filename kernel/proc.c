@@ -71,3 +71,22 @@ PUBLIC int sys_get_ticks()
 	return ticks;
 }
 
+PUBLIC int sys_get_crc()
+{
+	PROCESS* p = p_proc_ready;	//当前进程
+	int num = 10; //每次取10个字节
+	u8 *addr=&p;
+	u16 crc=0x0000;
+	int i;
+	for(;num>0;num--){
+		crc=crc^(*addr++);
+		for(i=0;i<8;i++){
+			if(crc&0x8000)
+				crc=(crc<<1)^0xA001;
+			else 
+				crc<<=1;
+		}
+		crc &= 0xFFFF;
+	}
+	return (crc);
+}

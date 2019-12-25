@@ -40,8 +40,8 @@ PUBLIC void clock_handler(int irq);
 
 /* proc.c */
 PUBLIC  int     sys_get_ticks();        /* sys_call */
-
+PUBLIC  int     sys_get_crc();
 /* syscall.asm */
 PUBLIC  void    sys_call();             /* int_handler */
 PUBLIC  int     get_ticks();
-
+PUBLIC  int     get_crc();
