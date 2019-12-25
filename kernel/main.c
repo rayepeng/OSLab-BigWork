@@ -20,7 +20,7 @@
 PUBLIC int kernel_main()
 {
 	disp_str("-----\"kernel_main\" begins-----\n");
-
+	int a,b,c;
 	TASK*		p_task		= task_table;
 	PROCESS*	p_proc		= proc_table;
 	char*		p_task_stack	= task_stack + STACK_SIZE_TOTAL;
@@ -73,6 +73,20 @@ PUBLIC int kernel_main()
 	proc_table[3].remain= 0;
 	proc_table[4].remain= 0;
 
+	// 测试内存分配
+	a = alloc_page();
+	disp_str("Allocate a at");
+	disp_int(a);
+	free_page(a);
+	disp_str("free page a");
+	b = alloc_page();
+	disp_str("ALlocate b at");
+	disp_int(b);
+
+	c = alloc_page();
+	disp_str("ALlocate c at");
+	disp_int(c);
+		
 	k_reenter = 0;
 	ticks = 0;
 

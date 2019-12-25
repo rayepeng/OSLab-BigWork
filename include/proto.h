@@ -20,7 +20,7 @@ PUBLIC void	delay(int time);
 
 /* kernel.asm */
 void restart();
-
+PUBLIC void free_page(int addr);
 /* main.c */
 void TestA();
 void TestB();

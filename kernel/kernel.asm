@@ -31,6 +31,8 @@ bits 32
 
 [SECTION .data]
 clock_int_msg		db	"^", 0
+bitmap                  dw      0x00000000
+bitmap_len		equ 	$-bitmap
 
 [SECTION .bss]
 StackSpace		resb	2 * 1024
@@ -59,6 +61,8 @@ global	stack_exception
 global	general_protection
 global	page_fault
 global	copr_error
+global  alloc_page
+global  free_page  ;添加函数
 global	hwint00
 global	hwint01
 global	hwint02
@@ -354,6 +358,29 @@ sys_call:
 ; ====================================================================================
 ;				    restart
 ; ====================================================================================
+; 添加函数实现
+alloc_page:
+	xor eax,eax
+.1:     bts [bitmap],eax
+	jnc .2
+	inc eax
+	cmp eax,bitmap_len
+	jl .1
+.2:
+	shl eax,12
+	add eax,0x1000
+	ret
+free_page:
+	push ebp
+	mov ebp,esp
+	
+	xor eax,eax
+	mov eax,[ebp+8]
+	sub eax,1000h
+	shr eax,12
+	btr [bitmap],eax
+	pop ebp
+	ret
 restart:
 	mov	esp, [p_proc_ready]
 	lldt	[esp + P_LDT_SEL]
